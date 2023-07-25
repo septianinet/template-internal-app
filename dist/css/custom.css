@@ -1,0 +1,200 @@
+.nav-item>.nav-title {
+    color: #cacaca;
+    padding: .5rem calc(calc(var(--tblr-page-padding) * 2)/ 2);
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.card-stats .icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.card-stats .icon i {
+    font-size: 2.25rem;
+}
+
+.card-stats .icon-shape {
+    display: inline-flex;
+    padding: 12px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-stats .icon-shape i {
+    font-size: 1.75rem;
+}
+
+/* Fix issue dropdown not show in table responsive */
+.table-responsive .dropdown,
+.table-responsive .btn-group,
+.table-responsive .btn-group-vertical {
+    position: static;
+}
+
+/* CSS For timeline */
+.timeline-steps {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:769px) {
+    .timeline-steps {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .timeline-steps .timeline-step {
+        min-width: 280px;
+    }
+}
+
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+.timeline-steps .timeline-step>.h4 {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+/* .timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+} */
+
+/* Valid circle */
+.timeline-steps .timeline-step.valid .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2fb344;
+}
+
+.timeline-steps .timeline-step.valid .timeline-content .inner-circle::before {
+    content: "";
+    background-color: #2fb344;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+}
+
+.timeline-steps .timeline-step:not(:last-child):after {
+    content: "";
+    display: block;
+    border-top: .25rem solid #2fb344;
+    width: 100%;
+    position: absolute;
+    left: 7.5rem;
+    top: 67px;
+}
+.timeline-steps .timeline-step:not(:first-child):before {
+    content: "";
+    display: block;
+    border-top: .25rem solid #2fb344;
+    width: 100%;
+    position: absolute;
+    right: 7.5rem;
+    top: 67px;
+}
+
+/* Invalid circle */
+.timeline-steps .timeline-step.invalid .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d63939;
+}
+
+.timeline-steps .timeline-step.invalid:not(.resubmit) .timeline-content .inner-circle::before {
+    content: "";
+    background-color: #d63939;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    opacity: 1;
+    border-radius: 6.25rem;
+    animation: flash 1.5s infinite;
+}
+
+/* Invalid resubmit circle */
+
+.timeline-steps .timeline-step.invalid.resubmit .timeline-content .inner-circle::before {
+    content: "";
+    background-color: #d63939;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    opacity: 1;
+    border-radius: 6.25rem;
+    z-index: 1000;
+}
+
+
+
+.timeline-steps .timeline-content {
+width: 10rem;
+text-align: center;
+}
+
+.timeline-step.invalid a.inner-circle {
+    cursor: pointer;
+}
+
+/* .timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+} */
+
+@keyframes flash {
+	0% {
+        transform: scale(0.7);
+		opacity: 0.5;
+	}
+
+	50% {
+        transform: scale(1);
+		opacity: 0.9;
+	}
+
+	100% {
+        transform: scale(0.7);
+		opacity: 0.5;
+	}
+}
