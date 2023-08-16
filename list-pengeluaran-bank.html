@@ -413,9 +413,11 @@
           </div>
           <div class="collapse navbar-collapse" id="sidebar-menu">
             <ul class="navbar-nav pt-lg-3">
-              <li class="nav-item"><span class="nav-title">BPU</span></li>
               <li class="nav-item">
-                <a class="nav-link" href="./dashboard-bpu.html">
+                <span class="nav-title">BPU</span>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./dashboard-user.html">
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -440,15 +442,15 @@
                       <path d="M19 21v1m0 -8v1"></path>
                     </svg>
                   </span>
-                  <span class="nav-link-title"> Home </span>
+                  <span class="nav-link-title"> Dashboard </span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./list-bpu.html">
+                <a class="nav-link" href="./reimbursements.html">
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-folder-dollar"
+                      class="icon icon-tabler icon-tabler-cash-banknote"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -459,16 +461,15 @@
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
                       <path
-                        d="M13.5 19h-8.5a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v1.5"
+                        d="M3 6m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
                       ></path>
-                      <path
-                        d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"
-                      ></path>
-                      <path d="M19 21v1m0 -8v1"></path>
+                      <path d="M18 12l.01 0"></path>
+                      <path d="M6 12l.01 0"></path>
                     </svg>
                   </span>
-                  <span class="nav-link-title"> BPU List </span>
+                  <span class="nav-link-title"> Reimbursements </span>
                 </a>
               </li>
 
@@ -510,21 +511,42 @@
                       <path d="M19 21v1m0 -8v1"></path>
                     </svg>
                   </span>
-                  <span class="nav-link-title"> BPU Management </span>
+                  <span class="nav-link-title"> Pengeluaran Management </span>
                 </a>
                 <div class="dropdown-menu">
                   <div class="dropdown-menu-columns">
                     <div class="dropdown-menu-column">
-                      <a
-                        class="dropdown-item"
-                        href="./dashboard-management-bpu.html"
-                      >
-                        Dashboard
+                      <a class="dropdown-item" href="./voucher-approval.html">
+                        Manager Approval
                         <span
                           class="badge badge-sm bg-green-lt text-uppercase ms-auto"
                           >New</span
                         >
                       </a>
+                      <a class="dropdown-item" href="./voucher-checking.html">
+                        Finance Checking
+                        <span
+                          class="badge badge-sm bg-green-lt text-uppercase ms-auto"
+                          >New</span
+                        >
+                      </a>
+                      <a class="dropdown-item" href="./voucher-validation.html">
+                        Finance Approval
+                        <span
+                          class="badge badge-sm bg-green-lt text-uppercase ms-auto"
+                          >New</span
+                        >
+                      </a>
+                      <a class="dropdown-item" href="./list-reimbursement.html">
+                        List Reimbursement
+                      </a>
+                      <a
+                        class="dropdown-item"
+                        href="./dashboard-approved-reimbursement.html"
+                      >
+                        Ready Reimbursement
+                      </a>
+
                       <a class="dropdown-item" href="./management-bpu.html">
                         Bulk Update
                       </a>
@@ -539,6 +561,65 @@
                         href="./management-set-tags.html"
                       >
                         Tags
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#navbar-layout"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="false"
+                  role="button"
+                  aria-expanded="true"
+                >
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-adjustments-dollar"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                      <path d="M6 4v4"></path>
+                      <path d="M6 12v8"></path>
+                      <path d="M13.366 14.54a2 2 0 1 0 -.216 3.097"></path>
+                      <path d="M12 4v10"></path>
+                      <path d="M12 18v2"></path>
+                      <path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                      <path d="M18 4v1"></path>
+                      <path d="M18 9v1"></path>
+                      <path
+                        d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"
+                      ></path>
+                      <path d="M19 21v1m0 -8v1"></path>
+                    </svg>
+                  </span>
+                  <span class="nav-link-title"> Penerimaan Management </span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-columns">
+                    <div class="dropdown-menu-column">
+                      <a
+                        class="dropdown-item"
+                        href="./list-penerimaan-kas.html"
+                      >
+                        Kas List
+                      </a>
+                      <a
+                        class="dropdown-item"
+                        href="./list-penerimaan-bank.html"
+                      >
+                        Bank List
                       </a>
                     </div>
                   </div>
@@ -601,7 +682,7 @@
               </li>
               <li class="nav-item"><span class="nav-title">General</span></li>
               <li class="nav-item">
-                <a class="nav-link" href="./list-bpu.html">
+                <a class="nav-link" href="./list-pengeluaran-kas.html">
                   <span class="nav-link-icon d-md-none d-lg-inline-block"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -628,7 +709,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./list-bpu.html">
+                <a class="nav-link" href="./list-pengeluaran-kas.html">
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -969,10 +1050,14 @@
               <div class="col">
                 <!-- Page pre-title -->
                 <div class="page-pretitle">ITPro BPU</div>
-                <h2 class="page-title">Create BPU for Internal</h2>
+                <h2 class="page-title">Pengeluaran Bank</h2>
               </div>
               <!-- Page title actions -->
-              <div class="col-auto ms-auto d-print-none"></div>
+              <div class="col-auto ms-auto d-print-none">
+                <a href="./create-pengeluaran.html" class="btn btn-primary"
+                  >Buat Pengeluaran</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -983,91 +1068,75 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-body border-bottom py-3">
-                    <div class="row">
-                      <!-- Nama -->
-                      <div class="col-sm-6">
-                        <div class="mb-3">
-                          <label class="form-label">Nama</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            name="example-text-input"
-                            placeholder="Masukkan nama"
-                          />
+                    <div class="d-flex mb-3">
+                      <div class="text-muted me-2">
+                        <input
+                          type="text"
+                          class="form-control form-control"
+                          placeholder="Search"
+                          aria-label="Search invoice"
+                        />
+                      </div>
+                      <div class="d-flex gap-1 d-sm-flex ms-auto">
+                        <div class="dropdown">
+                          <button
+                            class="btn"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Filter
+                            <i class="ms-1 ti ti-filter"></i>
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton"
+                          >
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
                         </div>
-                        <div>
-                          <label class="form-label">Tanggal Permintaan</label>
-                          <div class="input-icon mb-2">
-                            <input
-                              class="form-control"
-                              placeholder="Select a date"
-                              id="datepicker-icon"
-                              value="2023-07-14"
-                            />
-                            <span class="input-icon-addon"
-                              ><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="icon"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <path
-                                  stroke="none"
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                ></path>
-                                <path
-                                  d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"
-                                ></path>
-                                <path d="M16 3v4"></path>
-                                <path d="M8 3v4"></path>
-                                <path d="M4 11h16"></path>
-                                <path d="M11 15h1"></path>
-                                <path d="M12 15v3"></path>
-                              </svg>
-                            </span>
+                        <div class="dropdown">
+                          <button
+                            class="btn"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Sort By
+                            <i class="ms-1 ti ti-arrows-sort"></i>
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton"
+                          >
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
                           </div>
                         </div>
                       </div>
-                      <!-- Via -->
-                      <div class="col-sm-6">
-                        <div class="mb-3">
-                          <div class="form-label">Via</div>
-                          <select class="form-select">
-                            <option value="1">Transfer</option>
-                            <option value="2">Cash</option>
-                            <option value="3">Credit Card</option>
-                            <option value="3" selected>
-                              Transfer to other
-                            </option>
-                          </select>
-                        </div>
-                        <div class="mb-3">
-                          <div class="form-label">Transfer to</div>
-                          <select class="form-select">
-                            <option value="1">User 1</option>
-                            <option value="2">User 2</option>
-                            <option value="3">User 3</option>
-                          </select>
-                        </div>
-                        <div>
-                          <label class="form-label">Total</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            name="example-text-input"
-                            value="Rp. 2.000.000,00"
-                            readonly
-                          />
-                        </div>
-                      </div>
+                    </div>
+                    <div class="d-sm-flex gap-2">
+                      <span class="status status-teal status-lite mb-1">
+                        <span class="status-dot"></span>
+                        filter by status: rejected
+                        <a href=""><i class="ti ti-x"></i> </a>
+                      </span>
+                      <span class="status status-teal status-lite mb-1">
+                        <span class="status-dot"></span>
+                        sort by: no voucher
+                        <a href=""><i class="ti ti-x"></i> </a>
+                      </span>
                     </div>
                   </div>
                   <div class="table-responsive">
@@ -1076,11 +1145,31 @@
                     >
                       <thead>
                         <tr>
-                          <th class="w-1">No.</th>
-                          <th style="min-width: 250px">Keterangan</th>
-                          <th style="min-width: 130px">Customer</th>
-                          <th style="min-width: 130px">Projek</th>
-                          <th style="min-width: 130px">Jumlah</th>
+                          <th class="w-1">
+                            No.
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="icon icon-sm icon-thick"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path d="M6 15l6 -6l6 6" />
+                            </svg>
+                          </th>
+                          <th>No. Voucher</th>
+                          <th>Status</th>
+                          <th>Tanggal Permintaan</th>
                           <th class="text-end">Action</th>
                         </tr>
                       </thead>
@@ -1088,329 +1177,321 @@
                         <tr>
                           <td><span class="text-muted">1</span></td>
                           <td>
-                            <textarea
-                              class="form-control"
-                              name="example-textarea"
-                              placeholder="Masukkan keterangan item"
-                            ></textarea>
+                            <a
+                              href="invoice.html"
+                              class="text-reset"
+                              tabindex="-1"
+                              >VCBOUT/2023/001</a
+                            >
                           </td>
                           <td>
-                            <select class="form-select">
-                              <option value="1">CIMB</option>
-                              <option value="2">PT INDISARI</option>
-                              <option value="3">PT SELAMAT SENTOSA</option>
-                            </select>
+                            <span class="badge bg-danger me-1"></span> Reject by
+                            Manager
                           </td>
-
+                          <td>12 Juli 2023 7:00 AM</td>
                           <td class="text-end">
-                            <select class="form-select">
-                              <option value="1">Projek 1</option>
-                              <option value="2">Projek 2</option>
-                              <option value="3">Projek 3</option>
-                            </select>
-                          </td>
-                          <td>
-                            <input
-                              type="text"
-                              class="form-control"
-                              name="example-text-input"
-                              placeholder="Rp."
-                            />
-                          </td>
-                          <td class="text-end">
-                            <button
-                              type="button"
-                              class="btn btn-outline-danger btn-icon"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-trash"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                            <span class="dropdown">
+                              <button
+                                class="btn dropdown-toggle align-text-top"
+                                data-bs-toggle="dropdown"
+                                data-bs-popper="static"
                               >
-                                <path
-                                  stroke="none"
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                ></path>
-                                <path d="M4 7l16 0"></path>
-                                <path d="M10 11l0 6"></path>
-                                <path d="M14 11l0 6"></path>
-                                <path
-                                  d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"
-                                ></path>
-                                <path
-                                  d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"
-                                ></path>
-                              </svg>
-                            </button>
-                            <button
-                              type="button"
-                              class="btn btn-outline-azure btn-icon"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="icon"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <path
-                                  stroke="none"
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                ></path>
-                                <path
-                                  d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"
-                                ></path>
-                                <polyline points="7 9 12 4 17 9"></polyline>
-                                <line x1="12" y1="4" x2="12" y2="16"></line>
-                              </svg>
-                            </button>
+                                Actions
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a
+                                  class="dropdown-item"
+                                  href="./detail-bpu-with-timeline.html"
+                                >
+                                  Lihat
+                                </a>
+                                <a class="dropdown-item" href="#"> Print </a>
+                              </div>
+                            </span>
                           </td>
                         </tr>
                         <tr>
                           <td><span class="text-muted">2</span></td>
                           <td>
-                            <textarea
-                              class="form-control"
-                              name="example-textarea"
-                              placeholder="Masukkan keterangan item"
-                            ></textarea>
+                            <a
+                              href="invoice.html"
+                              class="text-reset"
+                              tabindex="-1"
+                              >VCBOUT/2023/002</a
+                            >
                           </td>
                           <td>
-                            <select class="form-select">
-                              <option value="1">CIMB</option>
-                              <option value="2">PT INDISARI</option>
-                              <option value="3">PT SELAMAT SENTOSA</option>
-                            </select>
+                            <span class="badge bg-warning me-1"></span> Transfer
+                            Pending
                           </td>
-
+                          <td>12 Juli 2023 7:00 AM</td>
                           <td class="text-end">
-                            <select class="form-select">
-                              <option value="1">Projek 1</option>
-                              <option value="2">Projek 2</option>
-                              <option value="3">Projek 3</option>
-                            </select>
-                          </td>
-                          <td>
-                            <input
-                              type="text"
-                              class="form-control"
-                              name="example-text-input"
-                              placeholder="Rp."
-                            />
-                          </td>
-                          <td class="text-end">
-                            <button
-                              type="button"
-                              class="btn btn-outline-danger btn-icon"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-trash"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                            <span class="dropdown">
+                              <button
+                                class="btn dropdown-toggle align-text-top"
+                                data-bs-toggle="dropdown"
+                                data-bs-popper="static"
                               >
-                                <path
-                                  stroke="none"
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                ></path>
-                                <path d="M4 7l16 0"></path>
-                                <path d="M10 11l0 6"></path>
-                                <path d="M14 11l0 6"></path>
-                                <path
-                                  d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"
-                                ></path>
-                                <path
-                                  d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"
-                                ></path>
-                              </svg>
-                            </button>
-                            <button
-                              type="button"
-                              class="btn btn-outline-azure btn-icon"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="icon"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <path
-                                  stroke="none"
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                ></path>
-                                <path
-                                  d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"
-                                ></path>
-                                <polyline points="7 9 12 4 17 9"></polyline>
-                                <line x1="12" y1="4" x2="12" y2="16"></line>
-                              </svg>
-                            </button>
+                                Actions
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a
+                                  class="dropdown-item"
+                                  href="./detail-bpu-with-timeline.html"
+                                >
+                                  Lihat
+                                </a>
+                                <a class="dropdown-item" href="#"> Print </a>
+                              </div>
+                            </span>
                           </td>
                         </tr>
                         <tr>
                           <td><span class="text-muted">3</span></td>
                           <td>
-                            <textarea
-                              class="form-control"
-                              name="example-textarea"
-                              placeholder="Masukkan keterangan item"
-                            ></textarea>
+                            <a
+                              href="invoice.html"
+                              class="text-reset"
+                              tabindex="-1"
+                              >VCBOUT/2023/003</a
+                            >
                           </td>
                           <td>
-                            <select class="form-select">
-                              <option value="1">CIMB</option>
-                              <option value="2">PT INDISARI</option>
-                              <option value="3">PT SELAMAT SENTOSA</option>
-                            </select>
+                            <span class="badge bg-warning me-1"></span> Checked
                           </td>
-
+                          <td>12 Juli 2023 7:00 AM</td>
                           <td class="text-end">
-                            <select class="form-select">
-                              <option value="1">Projek 1</option>
-                              <option value="2">Projek 2</option>
-                              <option value="3">Projek 3</option>
-                            </select>
+                            <span class="dropdown">
+                              <button
+                                class="btn dropdown-toggle align-text-top"
+                                data-bs-toggle="dropdown"
+                                data-bs-popper="static"
+                              >
+                                Actions
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a
+                                  class="dropdown-item"
+                                  href="./detail-bpu-with-timeline.html"
+                                >
+                                  Lihat
+                                </a>
+                                <a class="dropdown-item" href="#"> Print </a>
+                              </div>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="text-muted">4</span></td>
+                          <td>
+                            <a
+                              href="invoice.html"
+                              class="text-reset"
+                              tabindex="-1"
+                              >VCBOUT/2023/004</a
+                            >
                           </td>
                           <td>
-                            <input
-                              type="text"
-                              class="form-control"
-                              name="example-text-input"
-                              placeholder="Rp."
-                            />
+                            <span class="badge bg-primary me-1"></span> Transfer
+                            Success
                           </td>
+                          <td>12 Juli 2023 7:00 AM</td>
                           <td class="text-end">
-                            <button
-                              type="button"
-                              class="btn btn-outline-danger btn-icon"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-trash"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                            <span class="dropdown">
+                              <button
+                                class="btn dropdown-toggle align-text-top"
+                                data-bs-toggle="dropdown"
+                                data-bs-popper="static"
                               >
-                                <path
-                                  stroke="none"
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                ></path>
-                                <path d="M4 7l16 0"></path>
-                                <path d="M10 11l0 6"></path>
-                                <path d="M14 11l0 6"></path>
-                                <path
-                                  d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"
-                                ></path>
-                                <path
-                                  d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"
-                                ></path>
-                              </svg>
-                            </button>
-                            <button
-                              type="button"
-                              class="btn btn-outline-azure btn-icon"
+                                Actions
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a
+                                  class="dropdown-item"
+                                  href="./detail-bpu-with-timeline.html"
+                                >
+                                  Lihat
+                                </a>
+                                <a class="dropdown-item" href="#"> Print </a>
+                              </div>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="text-muted">5</span></td>
+                          <td>
+                            <a
+                              href="invoice.html"
+                              class="text-reset"
+                              tabindex="-1"
+                              >VCBOUT/2023/005</a
                             >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="icon"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                          </td>
+                          <td>
+                            <span class="badge bg-warning me-1"></span> Valid
+                          </td>
+                          <td>12 Juli 2023 7:00 AM</td>
+                          <td class="text-end">
+                            <span class="dropdown">
+                              <button
+                                class="btn dropdown-toggle align-text-top"
+                                data-bs-toggle="dropdown"
+                                data-bs-popper="static"
                               >
-                                <path
-                                  stroke="none"
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                ></path>
-                                <path
-                                  d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"
-                                ></path>
-                                <polyline points="7 9 12 4 17 9"></polyline>
-                                <line x1="12" y1="4" x2="12" y2="16"></line>
-                              </svg>
-                            </button>
+                                Actions
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a
+                                  class="dropdown-item"
+                                  href="./detail-bpu-with-timeline.html"
+                                >
+                                  Lihat
+                                </a>
+                                <a class="dropdown-item" href="#"> Print </a>
+                              </div>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="text-muted">6</span></td>
+                          <td>
+                            <a
+                              href="invoice.html"
+                              class="text-reset"
+                              tabindex="-1"
+                              >VCBOUT/2023/006</a
+                            >
+                          </td>
+                          <td>
+                            <span class="badge bg-warning me-1"></span> Valid
+                          </td>
+                          <td>12 Juli 2023 7:00 AM</td>
+                          <td class="text-end">
+                            <span class="dropdown">
+                              <button
+                                class="btn dropdown-toggle align-text-top"
+                                data-bs-toggle="dropdown"
+                                data-bs-popper="static"
+                              >
+                                Actions
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a
+                                  class="dropdown-item"
+                                  href="./detail-bpu-with-timeline.html"
+                                >
+                                  Lihat
+                                </a>
+                                <a class="dropdown-item" href="#"> Print </a>
+                              </div>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="text-muted">7</span></td>
+                          <td>
+                            <a
+                              href="invoice.html"
+                              class="text-reset"
+                              tabindex="-1"
+                              >VCBOUT/2023/007</a
+                            >
+                          </td>
+                          <td>
+                            <span class="badge bg-success me-1"></span> Approved
+                          </td>
+                          <td>12 Juli 2023 7:00 AM</td>
+                          <td class="text-end">
+                            <span class="dropdown">
+                              <button
+                                class="btn dropdown-toggle align-text-top"
+                                data-bs-toggle="dropdown"
+                                data-bs-popper="static"
+                              >
+                                Actions
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <a
+                                  class="dropdown-item"
+                                  href="./detail-bpu-with-timeline.html"
+                                >
+                                  Lihat
+                                </a>
+                                <a class="dropdown-item" href="#"> Print </a>
+                              </div>
+                            </span>
                           </td>
                         </tr>
                       </tbody>
-                      <tfoot>
-                        <tr>
-                          <td colspan="2">
-                            <button class="btn btn-success">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-plus"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <path
-                                  stroke="none"
-                                  d="M0 0h24v24H0z"
-                                  fill="none"
-                                ></path>
-                                <path d="M12 5l0 14"></path>
-                                <path d="M5 12l14 0"></path>
-                              </svg>
-                              Add Item
-                            </button>
-                          </td>
-                          <td><strong>Total Jumlah</strong></td>
-                          <td colspan="3" class="text-end h3">
-                            Rp. 2.000.000,00
-                          </td>
-                        </tr>
-                      </tfoot>
                     </table>
                   </div>
                   <div class="card-footer d-flex align-items-center">
-                    <div class="ms-auto d-block">
-                      <button class="btn btn-primary">Submit</button>
-                      <button class="btn btn-danger">Cancel</button>
-                    </div>
+                    <p class="m-0 text-muted">
+                      Showing <span>1</span> to <span>8</span> of
+                      <span>16</span> entries
+                    </p>
+                    <ul class="pagination m-0 ms-auto">
+                      <li class="page-item disabled">
+                        <a
+                          class="page-link"
+                          href="#"
+                          tabindex="-1"
+                          aria-disabled="true"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M15 6l-6 6l6 6" />
+                          </svg>
+                          prev
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">
+                          next
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 6l6 6l-6 6" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -1446,199 +1527,9 @@
         </footer>
       </div>
     </div>
-    <div
-      class="modal modal-blur fade"
-      id="modal-report"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">New report</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="mb-3">
-              <label class="form-label">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                name="example-text-input"
-                placeholder="Your report name"
-              />
-            </div>
-            <label class="form-label">Report type</label>
-            <div class="form-selectgroup-boxes row mb-3">
-              <div class="col-lg-6">
-                <label class="form-selectgroup-item">
-                  <input
-                    type="radio"
-                    name="report-type"
-                    value="1"
-                    class="form-selectgroup-input"
-                    checked
-                  />
-                  <span
-                    class="form-selectgroup-label d-flex align-items-center p-3"
-                  >
-                    <span class="me-3">
-                      <span class="form-selectgroup-check"></span>
-                    </span>
-                    <span class="form-selectgroup-label-content">
-                      <span class="form-selectgroup-title strong mb-1"
-                        >Simple</span
-                      >
-                      <span class="d-block text-muted"
-                        >Provide only basic data needed for the report</span
-                      >
-                    </span>
-                  </span>
-                </label>
-              </div>
-              <div class="col-lg-6">
-                <label class="form-selectgroup-item">
-                  <input
-                    type="radio"
-                    name="report-type"
-                    value="1"
-                    class="form-selectgroup-input"
-                  />
-                  <span
-                    class="form-selectgroup-label d-flex align-items-center p-3"
-                  >
-                    <span class="me-3">
-                      <span class="form-selectgroup-check"></span>
-                    </span>
-                    <span class="form-selectgroup-label-content">
-                      <span class="form-selectgroup-title strong mb-1"
-                        >Advanced</span
-                      >
-                      <span class="d-block text-muted"
-                        >Insert charts and additional advanced analyses to be
-                        inserted in the report</span
-                      >
-                    </span>
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="mb-3">
-                  <label class="form-label">Report url</label>
-                  <div class="input-group input-group-flat">
-                    <span class="input-group-text">
-                      https://tabler.io/reports/
-                    </span>
-                    <input
-                      type="text"
-                      class="form-control ps-0"
-                      value="report-01"
-                      autocomplete="off"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="mb-3">
-                  <label class="form-label">Visibility</label>
-                  <select class="form-select">
-                    <option value="1" selected>Private</option>
-                    <option value="2">Public</option>
-                    <option value="3">Hidden</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="mb-3">
-                  <label class="form-label">Client name</label>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="mb-3">
-                  <label class="form-label">Reporting period</label>
-                  <input type="date" class="form-control" />
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div>
-                  <label class="form-label">Additional information</label>
-                  <textarea class="form-control" rows="3"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <a
-              href="#"
-              class="btn btn-link link-secondary"
-              data-bs-dismiss="modal"
-            >
-              Cancel
-            </a>
-            <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal">
-              <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M12 5l0 14" />
-                <path d="M5 12l14 0" />
-              </svg>
-              Create new report
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Libs JS -->
-    <script
-      src="./dist/libs/litepicker/dist/litepicker.js?1684106062"
-      defer
-    ></script>
     <!-- Tabler Core -->
-    <script src="./dist/js/tabler.min.js" defer></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        window.Litepicker &&
-          new Litepicker({
-            element: document.getElementById("datepicker-icon"),
-            dropdowns: {
-              minYear: 2015,
-              maxYear: 2023,
-              months: false,
-              years: true,
-            },
-            buttonText: {
-              previousMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
-              nextMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
-            },
-          });
-      });
-    </script>
+    <script src="./dist/js/tabler.min.js?1684106062" defer></script>
+    <script src="./dist/js/demo.min.js?1684106062" defer></script>
   </body>
 </html>

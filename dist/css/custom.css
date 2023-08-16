@@ -37,7 +37,7 @@
 
 /* CSS For timeline */
 .timeline-steps {
-    display: flex;
+    display: -webkit-box;
     flex-wrap: nowrap;
     overflow-x: scroll;
     margin-top: 10px;
@@ -163,8 +163,8 @@
 
 
 .timeline-steps .timeline-content {
-width: 10rem;
-text-align: center;
+    width: 13rem;
+    text-align: center;
 }
 
 .timeline-step.invalid a.inner-circle {

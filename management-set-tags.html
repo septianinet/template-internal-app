@@ -413,9 +413,11 @@
           </div>
           <div class="collapse navbar-collapse" id="sidebar-menu">
             <ul class="navbar-nav pt-lg-3">
-              <li class="nav-item"><span class="nav-title">BPU</span></li>
               <li class="nav-item">
-                <a class="nav-link" href="./dashboard-bpu.html">
+                <span class="nav-title">BPU</span>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./dashboard-user.html">
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -440,15 +442,15 @@
                       <path d="M19 21v1m0 -8v1"></path>
                     </svg>
                   </span>
-                  <span class="nav-link-title"> Home </span>
+                  <span class="nav-link-title"> Dashboard </span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./list-bpu.html">
+                <a class="nav-link" href="./reimbursements.html">
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-folder-dollar"
+                      class="icon icon-tabler icon-tabler-cash-banknote"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -459,22 +461,21 @@
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
                       <path
-                        d="M13.5 19h-8.5a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v1.5"
+                        d="M3 6m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
                       ></path>
-                      <path
-                        d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"
-                      ></path>
-                      <path d="M19 21v1m0 -8v1"></path>
+                      <path d="M18 12l.01 0"></path>
+                      <path d="M6 12l.01 0"></path>
                     </svg>
                   </span>
-                  <span class="nav-link-title"> BPU List </span>
+                  <span class="nav-link-title"> Reimbursements </span>
                 </a>
               </li>
 
-              <li class="nav-item active dropdown">
+              <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle show"
+                  class="nav-link dropdown-toggle"
                   href="#navbar-layout"
                   data-bs-toggle="dropdown"
                   data-bs-auto-close="false"
@@ -510,21 +511,42 @@
                       <path d="M19 21v1m0 -8v1"></path>
                     </svg>
                   </span>
-                  <span class="nav-link-title"> BPU Management </span>
+                  <span class="nav-link-title"> Pengeluaran Management </span>
                 </a>
-                <div class="dropdown-menu show">
+                <div class="dropdown-menu">
                   <div class="dropdown-menu-columns">
                     <div class="dropdown-menu-column">
-                      <a
-                        class="dropdown-item"
-                        href="./dashboard-management-bpu.html"
-                      >
-                        Dashboard
+                      <a class="dropdown-item" href="./voucher-approval.html">
+                        Manager Approval
                         <span
                           class="badge badge-sm bg-green-lt text-uppercase ms-auto"
                           >New</span
                         >
                       </a>
+                      <a class="dropdown-item" href="./voucher-checking.html">
+                        Finance Checking
+                        <span
+                          class="badge badge-sm bg-green-lt text-uppercase ms-auto"
+                          >New</span
+                        >
+                      </a>
+                      <a class="dropdown-item" href="./voucher-validation.html">
+                        Finance Approval
+                        <span
+                          class="badge badge-sm bg-green-lt text-uppercase ms-auto"
+                          >New</span
+                        >
+                      </a>
+                      <a class="dropdown-item" href="./list-reimbursement.html">
+                        List Reimbursement
+                      </a>
+                      <a
+                        class="dropdown-item"
+                        href="./dashboard-approved-reimbursement.html"
+                      >
+                        Ready Reimbursement
+                      </a>
+
                       <a class="dropdown-item" href="./management-bpu.html">
                         Bulk Update
                       </a>
@@ -539,6 +561,65 @@
                         href="./management-set-tags.html"
                       >
                         Tags
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#navbar-layout"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="false"
+                  role="button"
+                  aria-expanded="true"
+                >
+                  <span class="nav-link-icon d-md-none d-lg-inline-block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-adjustments-dollar"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                      <path d="M6 4v4"></path>
+                      <path d="M6 12v8"></path>
+                      <path d="M13.366 14.54a2 2 0 1 0 -.216 3.097"></path>
+                      <path d="M12 4v10"></path>
+                      <path d="M12 18v2"></path>
+                      <path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                      <path d="M18 4v1"></path>
+                      <path d="M18 9v1"></path>
+                      <path
+                        d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"
+                      ></path>
+                      <path d="M19 21v1m0 -8v1"></path>
+                    </svg>
+                  </span>
+                  <span class="nav-link-title"> Penerimaan Management </span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-columns">
+                    <div class="dropdown-menu-column">
+                      <a
+                        class="dropdown-item"
+                        href="./list-penerimaan-kas.html"
+                      >
+                        Kas List
+                      </a>
+                      <a
+                        class="dropdown-item"
+                        href="./list-penerimaan-bank.html"
+                      >
+                        Bank List
                       </a>
                     </div>
                   </div>
@@ -601,7 +682,7 @@
               </li>
               <li class="nav-item"><span class="nav-title">General</span></li>
               <li class="nav-item">
-                <a class="nav-link" href="./list-bpu.html">
+                <a class="nav-link" href="./list-pengeluaran-kas.html">
                   <span class="nav-link-icon d-md-none d-lg-inline-block"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -628,7 +709,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./list-bpu.html">
+                <a class="nav-link" href="./list-pengeluaran-kas.html">
                   <span class="nav-link-icon d-md-none d-lg-inline-block">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
